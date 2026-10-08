@@ -1,0 +1,1 @@
+#to consider my name and create various meaningful names/substrings from it using string function

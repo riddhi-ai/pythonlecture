@@ -1,6 +1,7 @@
 #create a list of 10 numbers print the sum of last four elements of the list
 #find out the difference between max and min element of the list
 #insert a num in a list at 6th position this number must be 1/3rd of number stored at 4th position
+#08-10-26
 
 
 numbers = [1,3,4,2,5,8,9,6,7,10]
@@ -14,3 +15,4 @@ print(numbers)        #this prints the updated list afterwards
 
 numbers1 =[1,2,3,4,5,7,5,9]
 print("sorted list",sorted(numbers1))
+

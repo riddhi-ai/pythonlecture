@@ -1,0 +1,24 @@
+08-10
+
+strip
+count
+find
+starts with
+split
+partition
+lowercase
+upper
+capitalize first
+letter occurrence count
+position
+replace
+join list with separator
+
+
+palindrome , Fibonacci ,etc
+datatypes
+indentation
+for while
+control statement 
+loop control keywords : pass break continue
+loop else
