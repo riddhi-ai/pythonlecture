@@ -1,0 +1,10 @@
+#len
+numbers =[1,2,3,4,5,7,5,9]
+
+#sum
+print("sum of list numbers is ",sum(numbers))
+
+
+#sorting
+# sorted(numbers)                ascending order
+# sorted(numbers,reverse=True)   descending order
