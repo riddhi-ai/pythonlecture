@@ -8,6 +8,9 @@ print(numbers)
 print("sum of the last four elements from the list numbers:", sum(numbers[-4:])) #this shows slicing till 4th 
 difference=max(numbers)-min(numbers)
 print("difference between max and min element of the list",difference)
-insertinlist = numbers[3] / 3   #4th position  index 3
-numbers.insert(5, insertinlist) #6th position  index 5
-print("after inserting a number in list at 6th position",numbers.insert)
+insertinlist = numbers[3] % 3   #4th position shows index 3
+numbers.insert(5, insertinlist) #this adds element on 6th position  
+print(numbers)        #this prints the updated list afterwards
+
+numbers1 =[1,2,3,4,5,7,5,9]
+print("sorted list",sorted(numbers1))
