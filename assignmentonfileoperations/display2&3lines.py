@@ -11,5 +11,4 @@ if len(lines) >= 4:
 else:
   print("4th line: The file contains fewer than 4 lines.")
 
-
 file.close() #Closed the file
