@@ -1,0 +1,3 @@
+Welcome to the magical world of Python
+This is appended text from Riddhi
+This is appended text from Riddhi
