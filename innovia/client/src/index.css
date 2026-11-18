@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-paper: #FFF8F0;
+  --color-blush: #FFD6E0;
+  --color-lavender: #E4D9FF;
+  --color-mint: #D4F5E4;
+  --color-butter: #FFF3B8;
+  --color-babyblue: #D6EBFF;
+  --color-peach: #FFE0CC;
+  --color-ink: #4A4458;
+  --color-coral: #FFB5B5;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #FFF8F0;
+  color: #4A4458;
+  font-family: 'Nunito', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Notebook paper texture patterns */
+.bg-journal-dots {
+  background-color: #FFF8F0;
+  background-image: radial-gradient(#d3c6b6 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.bg-journal-lines {
+  background-color: #FFF8F0;
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 27px,
+    #EFE3D5 28px
+  );
+  line-height: 28px;
+}
+
+.bg-grid-notebook {
+  background-color: #FFF8F0;
+  background-image: 
+    linear-gradient(to right, #f0e6da 1px, transparent 1px),
+    linear-gradient(to bottom, #f0e6da 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Washi Tape styling with semi-transparent torn edges */
+.washi-tape {
+  position: relative;
+  background: rgba(255, 243, 184, 0.75);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  backdrop-filter: blur(2px);
+}
+.washi-tape-pink { background: rgba(255, 214, 224, 0.8); }
+.washi-tape-mint { background: rgba(212, 245, 228, 0.8); }
+.washi-tape-lavender { background: rgba(228, 217, 255, 0.8); }
+.washi-tape-blue { background: rgba(214, 235, 255, 0.8); }
+
+/* Torn paper edge effect */
+.torn-edge-bottom {
+  position: relative;
+}
+.torn-edge-bottom::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background-size: 16px 8px;
+  background-repeat: repeat-x;
+  background-image: radial-gradient(circle at 8px 8px, transparent 8px, #FFF8F0 8px);
+}
+
+/* Polaroid Card styling */
+.polaroid-card {
+  background: #ffffff;
+  padding: 12px 12px 24px 12px;
+  box-shadow: 0 6px 18px rgba(74, 68, 88, 0.12), 0 2px 6px rgba(74, 68, 88, 0.08);
+  border: 1px solid #efe8df;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transform-style: preserve-3d;
+}
+
+.polaroid-card:hover {
+  transform: rotate(0deg) translateY(-4px) scale(1.01) !important;
+  box-shadow: 0 12px 28px rgba(74, 68, 88, 0.16), 0 4px 10px rgba(74, 68, 88, 0.1);
+}
+
+/* Sticky note styling */
+.sticky-note {
+  box-shadow: 2px 4px 10px rgba(74, 68, 88, 0.12), inset 0 -20px 40px rgba(0, 0, 0, 0.02);
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.sticky-note:hover {
+  transform: rotate(0deg) scale(1.02) !important;
+}
+
+/* Notebook Binder Spiral Spine */
+.spiral-binder {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 28px,
+    #a8a29e 28px,
+    #78716c 30px,
+    #e7e5e4 32px,
+    transparent 34px
+  );
+}
+
+/* 3D perspective wrapper */
+.perspective-container {
+  perspective: 1200px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+/* Custom journal scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fbf5ec;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4c7b8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b5a494;
+}

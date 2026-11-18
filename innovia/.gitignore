@@ -1,0 +1,17 @@
+# Environment variables
+.env
+.env.local
+
+# Node dependencies
+node_modules/
+dist/
+build/
+.DS_Store
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Database
+.mongodb_data/
